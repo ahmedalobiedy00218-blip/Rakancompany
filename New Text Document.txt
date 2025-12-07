@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakan Medical Equipment - Innovating Health, Empowering Care</title>
+    <style>
+        /* Color Scheme: Light Blue, White, Red Accents */
+        :root {
+            --primary-blue: #007bff; /* Main Light Blue */
+            --accent-red: #dc3545; /* Red for Call-to-Action/Contact */
+            --light-bg: #f8f9fa; /* Very Light Gray/White Background */
+            --text-dark: #343a40;
+            --text-light: white;
+            --card-border: #e9ecef;
+        }
+
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            background-color: white;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: white;
+            border-bottom: 3px solid var(--card-border);
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .logo span {
+            color: var(--accent-red);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* Contact Button (Red Accent) */
+        .nav-links .contact-btn {
+            background-color: var(--accent-red);
+            color: var(--text-light);
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .nav-links .contact-btn:hover {
+            background-color: #c82333;
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--light-bg);
+            padding: 100px 20px;
+            text-align: center;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23f8f9fa"/><path d="M50,20 L50,80 M20,50 L80,50" stroke="%23e9ecef" stroke-width="20" opacity="0.5"/></svg>'); /* Subtle cross background */
+        }
+
+        .hero h1 {
+            color: var(--primary-blue);
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.25em;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+        }
+
+        /* Call to Action Button */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: var(--text-light);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c82333;
+        }
+
+        /* Main Content Section */
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Product Cards */
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            width: 30%;
+            min-width: 280px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: var(--primary-blue);
+            margin-top: 0;
+        }
+
+        .card-button {
+            display: inline-block;
+            background-color: var(--accent-red);
+            color: var(--text-light);
+            padding: 8px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .card-button:hover {
+             background-color: #c82333;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            text-align: center;
+            padding: 20px 0;
+            background-color: var(--light-bg);
+            border-top: 1px solid var(--card-border);
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span style="color: var(--accent-red);">+</span> Rakan Medical Equipment
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#products">Products</a>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Innovating Health. Empowering Care.</h1>
+        <p>Your Trusted Partner in Medical Equipment & Solutions</p>
+        <a href="#products" class="cta-button">Explore Products</a>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About Rakan Medical</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.6;">
+            <p>Founded on the principle of providing high-quality, reliable medical solutions, Rakan Medical Equipment is committed to advancing patient care. We partner with leading innovators worldwide to bring cutting-edge diagnostic and monitoring technology to hospitals, clinics, and health centers.</p>
+        </div>
+    </section>
+
+    <section id="products" class="container" style="background-color: var(--light-bg); margin: 20px auto; border-radius: 10px;">
+        <h2 class="section-title" style="color: var(--accent-red);">Our Medical Equipment</h2>
+        <div class="product-grid">
+            
+            <div class="card">
+                <h3>Diagnostic Imaging</h3>
+                <p>Advanced X-ray, Ultrasound, and MRI machines designed for clarity, speed, and patient comfort.</p>
+                <a href="#contact" class="card-button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Patient Monitoring</h3>
+                <p>Reliable and accurate vital signs monitors, ECG machines, and remote telemetry systems.</p>
+                <a href="#contact" class="card-button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Surgical & Laboratory Solutions</h3>
+                <p>High-precision surgical instruments, lab analyzers, and sterile processing equipment.</p>
+                <a href="#contact" class="card-button">Learn More</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact" class="contact-info">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Email: <a href="mailto:Rakancompany.ly@gmail.com">Rakancompany.ly@gmail.com</a></p>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Rakan Medical Equipment. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
